@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script>
+        let manifest = [
+"Build Automation Demo_LinuxX11_6727a6a.zip","Build Automation Demo_Mac OSX_6727a6a.zip","Build Automation Demo_Windows Desktop_6727a6a.zip","HTML5/Build Automation Demo.html"
+]
+        function generateEntries(data) {
+            let list = document.getElementById("entriesList")
+            for( i in data){
+                let element = data[i]
+
+                let line = document.createElement("li")
+                list.appendChild(line)
+
+                let link = document.createElement("a")
+                line.appendChild(link)
+
+                link.href = "./" + element;
+                link.innerText = element;
+
+            }
+        }
+        generateEntries(manifest)
+
+    </script>
+    <title>Build Automation Demo</title>
+</head>
+<body>
+    <h1>Build Automation Demo</h1>
+    <pre>commit 6727a6ad28f616d7f09d64942c32aac477a2932d
+Author: greenfox1505 <RyanTLeverenz@gmail.com>
+Date:   Fri Jul 31 17:34:29 2020 -0500
+
+    Adding GitHub Actions</pre>
+    <ul id="entriesList">
+    </ul>
+    <script>generateEntries(manifest)</script>
+</body>
+</html>
