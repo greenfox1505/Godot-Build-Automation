@@ -1,5 +1,7 @@
 # Godot Build Automation
 
+[GitHub Pages Link](https://greenfox1505.github.io/Godot-Build-Automation/)
+
 This is an example implementation of my Godot Build Automation system:
 
 https://gitlab.com/greenfox/godot-build-automation
